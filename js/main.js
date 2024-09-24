@@ -1,13 +1,10 @@
 
     // noakhali flood card functionality
 
-
 document.getElementById('donate-submit-noakhali').addEventListener('click', function () {
     const mainBalance = textNumber('main-balance');
     const noakhaliBalance = textNumber('noakhali-balance');
-    const noakhaliDonate = inputNumber('donate-amount-noakhali');
-    const inputValue = document.getElementById('donate-amount-noakhali').value;
-    amount(inputValue) 
+    const noakhaliDonate = inputNumber('donate-amount-noakhali'); 
 
     // check validation for donate amount
     if(noakhaliDonate <= 0 || isNaN(noakhaliDonate) || noakhaliDonate > mainBalance){
@@ -24,6 +21,21 @@ document.getElementById('donate-submit-noakhali').addEventListener('click', func
     document.getElementById('noakhali-balance').textContent = updateNoakhaliBalance;
     document.getElementById('donate-amount-noakhali').value = '';
     console.log({ mainBalance, noakhaliBalance, noakhaliDonate, updateMainBalance, updateNoakhaliBalance });
+
+
+    // history data addes here 
+
+    let div = createElement('div');
+    div.classList.add('p-8', 'rounded-md', 'shadow-md', 'space-y-4');
+
+    let historySection = id('history-section');
+    historySection.appendChild(div);
+
+    let h2 = document.createElement('h2');
+    h2.classList.add('font-bold', 'sm:text-3xl');
+    
+
+
 })
 
     // feni flood card functionaliy 
@@ -84,3 +96,4 @@ document.getElementById('close-modal').addEventListener('click', function(){
 })
 
 
+console.log(inputValue);
