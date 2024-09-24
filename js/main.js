@@ -150,3 +150,9 @@ document.getElementById('donate-submit-quota').addEventListener('click', functio
 document.getElementById('close-modal').addEventListener('click', function(){
     document.getElementById('modal').classList.add('hidden')
 })
+
+// blog page navigate onclick function on index.html file add 
+
+blog(){
+    window.loc
+}
