@@ -9,3 +9,7 @@ function textNumber(id){
 function inputNumber(id){
     return parseFloat(document.getElementById(id).value);
 }
+
+function createElement(element){
+    return document.createElement(element)
+}

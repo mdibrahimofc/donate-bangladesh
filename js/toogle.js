@@ -1,3 +1,4 @@
+
 document.getElementById('history').addEventListener('click', function(){
     id('history').classList.add('bg-lime-500');
     id('history').classList.remove('border', 'border-black');
@@ -13,5 +14,8 @@ document.getElementById('donation').addEventListener('click', function(){
     id('donation').classList.remove('border', 'border-black');
     id('donation').classList.add('bg-lime-500');
     id('main').classList.remove('hidden');
+
+    // history button hide 
+    id('history-section').classList.add('hidden')
 
 })

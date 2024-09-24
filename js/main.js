@@ -5,7 +5,9 @@
 document.getElementById('donate-submit-noakhali').addEventListener('click', function () {
     const mainBalance = textNumber('main-balance');
     const noakhaliBalance = textNumber('noakhali-balance');
-    const noakhaliDonate = inputNumber('donate-amount-noakhali'); 
+    const noakhaliDonate = inputNumber('donate-amount-noakhali');
+    const inputValue = document.getElementById('donate-amount-noakhali').value;
+    amount(inputValue) 
 
     // check validation for donate amount
     if(noakhaliDonate <= 0 || isNaN(noakhaliDonate) || noakhaliDonate > mainBalance){
